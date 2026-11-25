@@ -9,13 +9,15 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="cart-live" class="visually-hidden" aria-live="polite"></div>
 <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
   <div class="container">
     <a class="navbar-brand" href="index.html">☕ The Daily Grind</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon" aria-hidden="true"></span></button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
         <li class="nav-item"><a class="nav-link" href="cart.html">Your Order <span class="cart-badge" data-cart-count>0</span></a></li>
         <li class="nav-item ms-lg-3"><a class="btn btn-terra btn-sm" href="menu.html">Order Ahead</a></li>
@@ -24,7 +26,7 @@
   </div>
 </nav>
 
-<header class="hero">
+<header class="hero" id="main">
   <div class="container">
     <p class="eyebrow">Glassboro, New Jersey · Est. for this demo</p>
     <h1>Good coffee.<br>Slow mornings.<br>Real food.</h1>
@@ -36,8 +38,8 @@
 
 <section class="section" id="about"><div class="container">
   <div class="row align-items-center g-5">
-    <div class="col-lg-6 reveal"><img class="img-fluid rounded-4 shadow" src="https://picsum.photos/seed/dailygrind-inside/1000/700" alt="Inside the cafe"></div>
-    <div class="col-lg-6 reveal">
+    <div class="col-lg-6 reveal"><img class="img-fluid rounded-4 shadow" src="https://picsum.photos/seed/dailygrind-inside/1000/700" alt="Inside the Daily Grind cafe" loading="lazy" decoding="async"></div>
+    <div class="col-lg-6 reveal reveal-d1">
       <p class="eyebrow">About the cafe</p>
       <h2>A small cafe with a big regulars list</h2>
       <p class="text-muted">The Daily Grind is a fictional cafe created for this portfolio project. The idea is simple: roast good beans, bake every morning, and know people's orders before they reach the counter.</p>
@@ -54,9 +56,9 @@
 <section class="section" style="background:var(--sand)"><div class="container">
   <div class="text-center mb-5 reveal"><p class="eyebrow">From the menu</p><h2>Customer favourites</h2></div>
   <div class="row g-4">
-    <div class="col-md-4 reveal"><div class="card h-100"><img src="https://picsum.photos/seed/grind-c2/800/600" class="card-img-top" alt="Café latte"><div class="card-body"><h3 class="h5">Café Latte</h3><p class="text-muted">Espresso, steamed milk, soft foam.</p><p class="price mb-0">$5.00</p></div></div></div>
-    <div class="col-md-4 reveal"><div class="card h-100"><img src="https://picsum.photos/seed/grind-b1/800/600" class="card-img-top" alt="Avocado toast"><div class="card-body"><h3 class="h5">Avocado Toast</h3><p class="text-muted">Sourdough, smashed avocado, soft egg.</p><p class="price mb-0">$9.50</p></div></div></div>
-    <div class="col-md-4 reveal"><div class="card h-100"><img src="https://picsum.photos/seed/grind-k3/800/600" class="card-img-top" alt="Cinnamon roll"><div class="card-body"><h3 class="h5">Cinnamon Roll</h3><p class="text-muted">Warm swirl, cream-cheese glaze.</p><p class="price mb-0">$4.50</p></div></div></div>
+    <div class="col-md-4 reveal"><div class="card h-100"><img src="https://picsum.photos/seed/grind-c2/800/600" class="card-img-top" alt="Photo of a café latte" loading="lazy" decoding="async"><div class="card-body"><h3 class="h5">Café Latte</h3><p class="text-muted">Espresso, steamed milk, soft foam.</p><p class="price mb-0">$5.00</p></div></div></div>
+    <div class="col-md-4 reveal reveal-d1"><div class="card h-100"><img src="https://picsum.photos/seed/grind-b1/800/600" class="card-img-top" alt="Photo of avocado toast" loading="lazy" decoding="async"><div class="card-body"><h3 class="h5">Avocado Toast</h3><p class="text-muted">Sourdough, smashed avocado, soft egg.</p><p class="price mb-0">$9.50</p></div></div></div>
+    <div class="col-md-4 reveal reveal-d2"><div class="card h-100"><img src="https://picsum.photos/seed/grind-k3/800/600" class="card-img-top" alt="Photo of a cinnamon roll" loading="lazy" decoding="async"><div class="card-body"><h3 class="h5">Cinnamon Roll</h3><p class="text-muted">Warm swirl, cream-cheese glaze.</p><p class="price mb-0">$4.50</p></div></div></div>
   </div>
   <div class="text-center mt-4 reveal"><a class="btn btn-terra" href="menu.html">See the Full Menu</a></div>
 </div></section>

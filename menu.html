@@ -9,14 +9,16 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="cart-live" class="visually-hidden" aria-live="polite"></div>
 <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
   <div class="container">
     <a class="navbar-brand" href="index.html">☕ The Daily Grind</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon" aria-hidden="true"></span></button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link active" href="menu.html" aria-current="page">Menu</a></li>
         <li class="nav-item"><a class="nav-link" href="cart.html">Your Order <span class="cart-badge" data-cart-count>0</span></a></li>
         <li class="nav-item ms-lg-3"><a class="btn btn-terra btn-sm" href="cart.html">View Order</a></li>
       </ul>
@@ -24,13 +26,14 @@
   </div>
 </nav>
 
-<section class="section"><div class="container">
+<main id="main"><section class="section"><div class="container">
   <div class="text-center mb-4 reveal"><p class="eyebrow">The Menu</p><h1>What are you craving?</h1><p class="text-muted">Tap “Add to Order” — your cart is saved in your browser.</p></div>
   <!-- The menu is served by menu.php (PHP backend) when available, and falls back to the embedded data in js/menu-data.js on static hosting. -->
-  <div id="menu-cats" class="text-center mb-4 reveal"></div>
-  <div id="menu-grid" class="row g-4"></div>
+  <div id="menu-cats" class="text-center mb-4 reveal" role="group" aria-label="Filter menu by category"></div>
+  <p id="menu-status" class="visually-hidden" aria-live="polite"></p>
+  <div id="menu-grid" class="row g-4"><div class="menu-loading"><p class="mb-3">Loading the menu…</p><div class="row g-4" aria-hidden="true"><div class="col-md-6 col-lg-4"><div class="skeleton"></div></div><div class="col-md-6 col-lg-4"><div class="skeleton"></div></div><div class="col-md-6 col-lg-4"><div class="skeleton"></div></div></div></div></div>
   <div class="text-center mt-5 reveal"><a class="btn btn-terra" href="cart.html">Review Your Order →</a></div>
-</div></section>
+</div></section></main>
 
 <footer class="py-5"><div class="container text-center"><p class="small mb-0">© 2026 The Daily Grind Cafe — fictional demo site. Portfolio piece by Khushi Khatri. · <a href="index.html">Home</a> · <a href="cart.html">Your Order</a></p></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -10,8 +10,13 @@
   function cartCount() { var c = readCart(), n = 0; Object.keys(c).forEach(function (k) { n += c[k]; }); return n; }
   function cartTotal(menu) { var c = readCart(), t = 0; Object.keys(c).forEach(function (id) { var it = menu.items.find(function (i) { return i.id === id; }); if (it) t += it.price * c[id]; }); return t; }
 
-  function updateBadges() {
-    document.querySelectorAll('[data-cart-count]').forEach(function (el) { el.textContent = cartCount(); });
+  function updateBadges(bump) {
+    document.querySelectorAll('[data-cart-count]').forEach(function (el) {
+      el.textContent = cartCount();
+      var link = el.closest('a');
+      if (link) link.setAttribute('aria-label', 'Your order, ' + cartCount() + ' item(s)');
+      if (bump) { el.classList.remove('bump'); void el.offsetWidth; el.classList.add('bump'); }
+    });
   }
 
   function loadMenu() {
