@@ -1,0 +1,32 @@
+:root{--ink:#2e2118;--terra:#b4552d;--terra-dk:#93421f;--cream:#fbf6ee;--sand:#f1e6d6;--sage:#6f7d5a;--gold:#d9a441}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:var(--cream)}
+h1,h2,h3,.serif{font-family:'Fraunces',serif}
+.navbar{background:rgba(251,246,238,.97);backdrop-filter:blur(8px)}
+.navbar-brand{font-family:'Fraunces',serif;font-size:1.5rem}
+.nav-link{letter-spacing:.1em;text-transform:uppercase;font-size:.82rem}
+.btn-terra{background:var(--terra);color:#fff;border-radius:999px;padding:.65rem 1.8rem;letter-spacing:.06em;text-transform:uppercase;font-size:.85rem;border:none}
+.btn-terra:hover{background:var(--terra-dk);color:#fff;transform:translateY(-2px);box-shadow:0 8px 20px rgba(180,85,45,.35)}
+.btn-outline-terra{border:1px solid var(--terra);color:var(--terra);border-radius:999px;padding:.55rem 1.4rem;letter-spacing:.06em;text-transform:uppercase;font-size:.85rem}
+.btn-outline-terra:hover{background:var(--terra);color:#fff}
+.hero{min-height:86vh;background:linear-gradient(rgba(46,33,24,.5),rgba(46,33,24,.5)),url('https://picsum.photos/seed/dailygrind-hero/1800/1100') center/cover;display:flex;align-items:center;color:#fff}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.05}
+.eyebrow{letter-spacing:.35em;text-transform:uppercase;font-size:.75rem;color:var(--gold)}
+.section{padding:5rem 0}
+.card{border:none;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(46,33,24,.08);transition:transform .3s ease,box-shadow .3s ease}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(46,33,24,.14)}
+.card img{height:200px;object-fit:cover}
+.price{font-family:'Fraunces',serif;font-size:1.25rem;color:var(--terra)}
+.cat-btn{border-radius:999px;padding:.5rem 1.3rem;border:1px solid var(--terra);color:var(--terra);background:transparent;font-size:.9rem}
+.cat-btn.active,.cat-btn:hover{background:var(--terra);color:#fff}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+.cart-badge{background:var(--terra);color:#fff;border-radius:999px;font-size:.75rem;padding:.15rem .5rem;margin-left:.25rem}
+footer{background:#2e2118;color:#f1e6d6}
+footer a{color:#f1e6d6;text-decoration:none}
+footer a:hover{color:#fff}
+.demo-note{background:#fff8e6;border:1px dashed var(--gold);border-radius:12px;padding:1rem 1.25rem}
+.form-control,.form-select{border-radius:10px;padding:.7rem 1rem}
+.form-control:focus,.form-select:focus{border-color:var(--terra);box-shadow:0 0 0 .25rem rgba(180,85,45,.25)}
+.qty-btn{width:32px;height:32px;border-radius:50%;border:1px solid var(--terra);color:var(--terra);background:#fff;line-height:1}
+.qty-btn:hover{background:var(--terra);color:#fff}
+.toast-check{font-size:3rem}

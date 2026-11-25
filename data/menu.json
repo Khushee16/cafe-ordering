@@ -1,0 +1,20 @@
+{
+  "cafe": "The Daily Grind Cafe",
+  "currency": "USD",
+  "categories": ["Coffee", "Breakfast", "Lunch", "Bakery"],
+  "items": [
+    { "id": "c1", "name": "House Drip Coffee", "category": "Coffee", "price": 3.50, "description": "Smooth medium roast, brewed fresh all day.", "image": "https://picsum.photos/seed/grind-c1/800/600" },
+    { "id": "c2", "name": "Café Latte", "category": "Coffee", "price": 5.00, "description": "Espresso with steamed milk and a soft foam finish.", "image": "https://picsum.photos/seed/grind-c2/800/600" },
+    { "id": "c3", "name": "Cappuccino", "category": "Coffee", "price": 4.75, "description": "Double shot, velvety foam, dusted with cocoa.", "image": "https://picsum.photos/seed/grind-c3/800/600" },
+    { "id": "c4", "name": "Iced Cold Brew", "category": "Coffee", "price": 5.25, "description": "Slow-steeped 18 hours, served over ice.", "image": "https://picsum.photos/seed/grind-c4/800/600" },
+    { "id": "b1", "name": "Avocado Toast", "category": "Breakfast", "price": 9.50, "description": "Sourdough, smashed avocado, chilli flakes, soft egg.", "image": "https://picsum.photos/seed/grind-b1/800/600" },
+    { "id": "b2", "name": "Breakfast Burrito", "category": "Breakfast", "price": 10.50, "description": "Eggs, cheddar, potatoes and salsa in a warm tortilla.", "image": "https://picsum.photos/seed/grind-b2/800/600" },
+    { "id": "b3", "name": "Berry Overnight Oats", "category": "Breakfast", "price": 7.00, "description": "Oats, yoghurt, honey and seasonal berries.", "image": "https://picsum.photos/seed/grind-b3/800/600" },
+    { "id": "l1", "name": "Grilled Chicken Panini", "category": "Lunch", "price": 12.00, "description": "Chicken, pesto, mozzarella and tomato on ciabatta.", "image": "https://picsum.photos/seed/grind-l1/800/600" },
+    { "id": "l2", "name": "Tomato Basil Soup", "category": "Lunch", "price": 8.50, "description": "Slow-simmered tomato soup with a grilled cheese side.", "image": "https://picsum.photos/seed/grind-l2/800/600" },
+    { "id": "l3", "name": "Garden Grain Bowl", "category": "Lunch", "price": 11.50, "description": "Quinoa, roasted vegetables, chickpeas and tahini.", "image": "https://picsum.photos/seed/grind-l3/800/600" },
+    { "id": "k1", "name": "Butter Croissant", "category": "Bakery", "price": 3.75, "description": "Flaky, golden, baked in-house every morning.", "image": "https://picsum.photos/seed/grind-k1/800/600" },
+    { "id": "k2", "name": "Blueberry Muffin", "category": "Bakery", "price": 4.00, "description": "Bursting with blueberries and a crumb topping.", "image": "https://picsum.photos/seed/grind-k2/800/600" },
+    { "id": "k3", "name": "Cinnamon Roll", "category": "Bakery", "price": 4.50, "description": "Warm cinnamon swirl with cream-cheese glaze.", "image": "https://picsum.photos/seed/grind-k3/800/600" }
+  ]
+}
